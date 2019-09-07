@@ -1,9 +1,91 @@
-<ion-header>
+<ion-header no-border>
   <ion-toolbar>
-    <ion-title>seleccion</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Seleccionar Habitacion</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!--Primera Habitacion-->
+  <ion-row>
+    <ion-col col-4>
+      <ion-card>
+        <ion-img src="/assets/Seleccion/twin.jpg" class="header"></ion-img>
+      </ion-card>
+      <ion-item>
+        <ion-icon name="person"></ion-icon>
+        <p>3 Personas</p>
+      </ion-item>
+    </ion-col>
 
+    <ion-col col-4>
+      <ion-card>
+        <ion-label>Special Twin</ion-label>
+        <p>
+          2 camas Queen dobles (1.40 * 1.90 mts), aire acondicionado y TV LCD
+          con televisión satelital...
+        </p>
+        <ion-label>COP 315,193</ion-label>
+        <ion-button expand="full" color="primary">Info Adicional</ion-button>
+        <ion-button expand="full" color="danger">Reservar</ion-button>
+      </ion-card>      
+    </ion-col>
+  </ion-row>
+  <!--Segunda habitacion-->
+  <ion-row>
+    <ion-col col-4>
+      <ion-card>
+        <ion-img src="/assets/Seleccion/junior.jpg" class="header"></ion-img>
+      </ion-card>
+      <ion-item>
+        <ion-icon name="person"></ion-icon>
+        <p>3 Personas</p>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="barcode"></ion-icon>
+        <p>1 Cuna</p>
+      </ion-item>
+    </ion-col>
+
+    <ion-col col-4>
+      <ion-card>
+        <ion-label>Junior Suite</ion-label>
+        <p>
+          Esta habitación cuenta una cama King, con sofá, TV LCD con televisión
+          satelital, minibar, caja de seguridad digital, secador...          
+        </p>
+        <ion-label>COP 474,078</ion-label>
+        <ion-button expand="full" color="primary">Info Adicional</ion-button>
+        <ion-button expand="full" color="danger">Reservar</ion-button>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <!--Tercera habitacion-->
+  <ion-row>
+    <ion-col col-4>
+      <ion-card>
+        <ion-img src="/assets/Seleccion/suite.jpg" class="header"></ion-img>
+      </ion-card>
+      <ion-item>
+        <ion-icon name="person"></ion-icon>
+        <p>3 Personas</p>
+      </ion-item>
+    </ion-col>
+
+    <ion-col col-4>
+      <ion-card>
+        <ion-label>Suite</ion-label>
+        <p>
+          Cuenta con dos ambientes entre la sala y el dormitorio, cama King, TV
+          LCD con televisión satelital, escritorio, sofá, baño, caja digital de
+          seguridad...
+        </p>
+        <ion-label>COP 632,943</ion-label>
+        <ion-button expand="full" color="primary">Info Adicional</ion-button>
+        <ion-button expand="full" color="danger">Reservar</ion-button>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>
