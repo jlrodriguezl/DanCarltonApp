@@ -1,9 +1,112 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>resumen</ion-title>
+    <ion-title>CONFIRMACION</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <h1>Felicitaciones!!!</h1>
+    <p>Tu reserve ya fue aprobada, en la seccion de abajo encontras los detalles de tu abitacion.</p>
+  </ion-card>
+  <ion-card>
+    <p>INFORMACION DE TU RESERVA</p>
+    <ul class="list">
+        <li class="item item-checkbox">
+           PAGADO
+           <label class="checkbox">
+           <input type="checkbox">
+           </label>
+        </li>
+        <li class="item item-checkbox">
+           CANCELAR
+           <label class="checkbox">
+           <input type="checkbox">
+           </label>
+        </li>
+    </ul>
+  </ion-card>
+  <ion-card>
+      <ion-row>
+          <ion-col col-4>
+            <ion-card>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/ae/54/e7/habitacion-doble-de-la.jpg"
+                class="header">
+            </ion-card>
+          </ion-col>
+          <ion-col col-4>
+            <ion-card>
+                <ul class="list">
+                    <li class="item item-checkbox checkbox-balanced">
+                       Parqueadero
+                       <label class="checkbox">
+                       </label>
+                    </li>
+                    <li class="item item-checkbox checkbox-energized">
+                       GYM
+                       <label class="checkbox">
+                       </label>
+                    </li>
+                    <li class="item item-checkbox checkbox-assertive">
+                       Salones
+                       <label class="checkbox">
+                       </label>
+                    </li>
+                    <li class="item item-checkbox checkbox-assertive">
+                        SPA
+                        <label class="checkbox">
+                        </label>
+                     </li>
+                     <li class="item item-checkbox checkbox-assertive">
+                        Bar
+                        <label class="checkbox">
+                        </label>
+                     </li>
+                </ul>
+            </ion-card>
+          </ion-col>      
+        </ion-row>
+  </ion-card>
+  <ion-card>
+    
+  </ion-card>
+  <ion-card>
+      <h6>Detalles del huesped</h6>
+      <ul class="list">
+          <li class="item item-checkbox checkbox-balanced">
+             JHONNY RODRIGUEZ
+             <label class="checkbox">
+             </label>
+          </li>
+          <li class="item item-checkbox checkbox-energized">
+             C.C. 1015416251
+             <label class="checkbox">
+             </label>
+          </li>
+          <li class="item item-checkbox checkbox-assertive">
+             Telefono: 3133435200
+             <label class="checkbox">
+             </label>
+          </li>
+          <li class="item item-checkbox checkbox-assertive">
+              Ciudad: Bogota
+              <label class="checkbox">
+              </label>
+           </li>
+           <li class="item item-checkbox checkbox-assertive">
+              Pago: Tarjeta de Credito
+              <label class="checkbox">
+              </label>
+           </li>
+      </ul>
+  </ion-card>
+  <ion-card>
+    <p>TOTAL PAGADO</p>
+    <ion-card>
+        <ion-img src="../assets/resumen/factura.jpg"></ion-img>
+    </ion-card>
+  </ion-card>
+  <ion-card>
+      <ion-button href="">Descarga tu Reserva</ion-button>
+  </ion-card>
 </ion-content>
