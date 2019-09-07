@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>inicio</ion-title>
+    <ion-title>Datos de ingreso</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <ion-item>
+    <ion-icon name="speedometer"></ion-icon><ion-label>Ingreso</ion-label>
+    <ion-datetime displayFormat="D MMM YYYY hh:mm a" [(ngModel)]="inDate"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="checkmark-circle-outline"></ion-icon><ion-label>Salida</ion-label>
+  <ion-datetime displayFormat="D MMM YYYY hh:mm a" [(ngModel)]="finDate"></ion-datetime>
+</ion-item>
+<ion-item>
+  <ion-icon name="contact"></ion-icon><ion-label>Adultos</ion-label>
+  <ion-select placeholder="Total" [(ngModel)]="totalAdultos">
+    <ion-select-option *ngFor= "let a of totalPer" [value]="a">{{ a }}</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-icon name="contacts"></ion-icon><ion-label>Niños</ion-label>
+  <ion-select placeholder="Total" [(ngModel)]="totalNinos">
+    <ion-select-option *ngFor= "let a of totalPer" [value]="n">{{ a }}</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-button full (click)="irSeleccion()">Buscar</ion-button>
 </ion-content>

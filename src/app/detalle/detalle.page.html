@@ -1,9 +1,77 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>detalle</ion-title>
+    <ion-title>Casa Dann Carlton</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
 
+
+    <ion-card>
+        <ion-card-header>
+          <ion-card-title>Habitación Doble</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+            2 camas Queen dobles (1.40 * 1.90 mts), aire acondicionado y TV LCD
+            con televisión satelital. También cuenta con comedor, minibar, sala
+            con sofá, caja de seguridad digital, secador, baño privado y acceso
+            gratuito a internet Wi-Fi. También cuenta con la posibilidad de
+            ingreso gratis hasta de dos niños por habitación entre los 0 y 11 años
+            de edad, siempre y cuando hagan uso de las camas en existencia.
+        </ion-card-content>
+      </ion-card>
+
+
+<ion-slides class="image-slider"  pager="true" loop="true" >
+  <ion-slide *ngFor="let img of images" >
+    <img src="assets/detalle/{{img}}" class="thumb-img"> 
+
+  </ion-slide>
+
+</ion-slides>
+
+
+<ion-row>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Servicios</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-icon name="snow"> </ion-icon> 
+            <p> Aire</p>
+       
+            <ion-icon name="tv"> </ion-icon>
+        <p> Televisión</p>
+        </ion-item>
+
+        <ion-item>
+            <ion-icon name="wifi"> </ion-icon>
+            <p> Wi-Fi</p>
+        <ion-icon name="call"> </ion-icon>
+        <p> Telefono</p>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+      <ion-card-header>
+        <ion-card-title>Tarifa</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+          <ion-text color="success">
+              <h1>$315,193 COP</h1>
+            </ion-text>
+            <ion-text color="dark">
+                <h4>*Valor por noche</h4>
+              </ion-text>
+  
+      </ion-card-content>
+    </ion-card>
+    <ion-item>
+        <ion-button color="primary">Volver</ion-button>
+        <ion-button color="success">Reservar</ion-button>
+    </ion-item>
 </ion-content>
+
